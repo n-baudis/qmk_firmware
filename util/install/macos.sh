@@ -22,5 +22,6 @@ _qmk_install() {
     brew link --force avr-gcc@8
     brew link --force arm-gcc-bin@8
 
-    python3 -m pip install -r $QMK_FIRMWARE_DIR/requirements.txt
+    # python3 -m pip install -r $QMK_FIRMWARE_DIR/requirements.txt
+    python3 -m pip install -r /Users/nbaudis/Library/Mobile\ Documents/com~apple~CloudDocs/qmk_firmware/requirements.txt
 }
