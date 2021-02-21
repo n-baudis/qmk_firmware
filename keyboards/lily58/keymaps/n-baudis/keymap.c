@@ -116,6 +116,18 @@ void update_tri_layer_RGB(uint8_t layer1, uint8_t layer2, uint8_t layer3) {
   }
 }
 
+// Rotary Encoder
+void encoder_update_user(uint8_t index, bool clockwise) {
+  if (index == 0) { // First (& only) encoder
+    if (clockwise) {
+      tap_code(KC_VOLU);
+    }
+    else {
+      tap_code(KC_VOLD);
+    }
+  }
+}
+
 //SSD1306 OLED update loop, make sure to enable OLED_DRIVER_ENABLE=yes in rules.mk
 #ifdef OLED_DRIVER_ENABLE
 

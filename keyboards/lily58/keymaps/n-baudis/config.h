@@ -43,6 +43,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
+// Rotary Encoder
+#define ENCODERS_PAD_A { F4 }
+#define ENCODERS_PAD_B { F5 }
+#define ENCODER_RESOLUTION 4
+#define ENCODER_DIRECTION_FLIP
+
 // Underglow
 /*
 #undef RGBLED_NUM
@@ -50,3 +56,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_SLEEP
 */
+
+// Underglow
+#undef RGBLED_NUM
+#define RGBLED_NUM 10    // Number of LEDs
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_SLEEP
